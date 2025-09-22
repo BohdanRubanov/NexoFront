@@ -1,0 +1,77 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"files": {
+		"ignoreUnknown": true
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"indentWidth": 4,
+		"lineWidth": 100
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"useOptionalChain": "error",
+				"noExcessiveCognitiveComplexity": "error"
+			},
+			"suspicious": {
+				"noExplicitAny": "warn",
+				"noEmptyBlockStatements": "error",
+				"noImplicitAnyLet": "error",
+				"useGetterReturn": "error",
+				"noArrayIndexKey": "warn",
+				"noAssignInExpressions": "error",
+				"noDoubleEquals": "error",
+				"noUnknownAtRules": "off"
+			},
+			"style": {
+				"useBlockStatements": "error",
+				"useConst": "error",
+				"noNonNullAssertion": "warn",
+				"useConsistentArrayType": "error",
+				"noParameterAssign": "error"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double",
+			"semicolons": "always",
+			"arrowParentheses": "always"
+		},
+		"parser": {
+			"unsafeParameterDecoratorsEnabled": false
+		}
+	},
+	"overrides": [
+		{
+			"includes": [".json", ".jsonc"],
+			"assist": {
+				"actions": {
+					"source": {
+						"useSortedKeys": "off"
+					}
+				}
+			}
+		}
+	],
+	"assist": {
+		"enabled": true,
+		"actions": {
+			"source": {
+				"organizeImports": "on",
+				"useSortedAttributes": "off",
+				"useSortedKeys": "off",
+				"useSortedProperties": "off"
+			}
+		}
+	}
+}
