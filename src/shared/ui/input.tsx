@@ -1,8 +1,6 @@
 import { cn } from "@/shared/lib/css";
 
 function Input({ className, type, ...props }: React.ComponentProps<"input">) {
-	const id = 1;
-	console.log(id);
 	return (
 		<input
 			className={cn(

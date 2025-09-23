@@ -1,9 +1,5 @@
-import { Button } from "@/shared/ui/button";
+// import { AuthFormLayout } from "@/features/auth/ui/auth-form-layout";
 
 export default function Home() {
-	return (
-		<div>
-			<Button>Hello</Button>
-		</div>
-	);
+	return <div>{/* <AuthFormLayout></AuthFormLayout> */}</div>;
 }
