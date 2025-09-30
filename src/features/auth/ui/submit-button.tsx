@@ -1,9 +1,7 @@
-import { Button } from "@/shared/ui/button";
+import { Button } from "@/shared/ui";
 
-export function SubmitButton({ children }: { children: React.ReactNode }) {
+export function SubmitButton(title: string) {
 	return (
-		<Button height={52} type="submit" width={399}>
-			{children}
-		</Button>
+		<Button type="submit" color="primary" size="lg" title={title} />
 	);
 }

@@ -37,7 +37,8 @@
 				"useConst": "error",
 				"noNonNullAssertion": "warn",
 				"useConsistentArrayType": "error",
-				"noParameterAssign": "error"
+				"noParameterAssign": "error",
+				"useImportType": "off"
 			}
 		}
 	},
@@ -53,25 +54,20 @@
 	},
 	"overrides": [
 		{
-			"includes": [".json", ".jsonc"],
-			"assist": {
-				"actions": {
-					"source": {
-						"useSortedKeys": "off"
-					}
-				}
-			}
+			"includes": ["src/shared/assets/**"],
+			"linter": { "enabled": false }
 		}
 	],
 	"assist": {
 		"enabled": true,
 		"actions": {
 			"source": {
-				"organizeImports": "on",
+				"organizeImports": "off",
 				"useSortedAttributes": "off",
 				"useSortedKeys": "off",
 				"useSortedProperties": "off"
 			}
 		}
 	}
+
 }

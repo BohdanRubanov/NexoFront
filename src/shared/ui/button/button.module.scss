@@ -1,0 +1,55 @@
+@use "../../styles/index.scss" as *;
+
+.button {
+    cursor: pointer;
+    border-radius: 1234px;
+    @include flex-center;
+    gap: 16px;
+    padding: 16px;
+    width: auto;
+    min-width: min-content;
+    color: $white-100;
+
+
+
+    &.primary {
+        background-color: $plum-100;
+        border: none;
+
+
+
+
+        &:hover {
+            background-color: $plum-hover;
+        }
+    }
+
+    &.secondary {
+        background-color: $white-100;
+        color: $plum-100;
+        border: 1px $plum-100 solid;
+
+
+        &:hover {
+            background-color: $plum-50;
+        }
+    }
+
+    &.lg {
+        height: 52px;
+        font-size: 16px;
+        padding-inline: 118px;
+    }
+
+    &.md {
+        height: 40px;
+        font-size: 14px;
+    }
+
+
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}

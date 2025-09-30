@@ -1,3 +1,4 @@
+import { ConfirmPassword } from "./confirm-password";
 import {
 	Card,
 	CardContent,
@@ -5,9 +6,8 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/shared/ui/card";
-import { AuthFields } from "./fields";
 import { SubmitButton } from "./submit-button";
-import { ConfirmPassword } from "./confirm-password";
+import { AuthFields } from "./fields";
 
 interface IAuthFormProps {
 	formTitle: string;
@@ -19,8 +19,8 @@ export function AuthFormLayout(props: IAuthFormProps) {
 	const { formTitle, buttonText, isSignUp } = props;
 	return (
 		<Card>
-			<CardHeader>
-				<CardTitle>{formTitle}</CardTitle>
+			<CardHeader >
+				<CardTitle className="flex-row">{formTitle}</CardTitle>
 			</CardHeader>
 			<CardContent className="grid gap-6">
 				<AuthFields />

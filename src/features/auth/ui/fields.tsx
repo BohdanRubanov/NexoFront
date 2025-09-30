@@ -1,10 +1,8 @@
-import { useId } from "react";
+
 import { Input } from "@/shared/ui/input";
 import { Label } from "@/shared/ui/label";
 
 export function AuthFields() {
-	const emailId = useId();
-	const passwordId = useId();
 	return (
 		<>
 			<div>

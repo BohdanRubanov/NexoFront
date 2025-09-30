@@ -1,0 +1,21 @@
+@use "../../styles/index.scss" as *;
+
+
+.inputCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+.input {
+    flex: 1;
+    border: none;
+    outline: none;
+}
